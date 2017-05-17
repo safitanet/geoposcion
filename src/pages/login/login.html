@@ -1,0 +1,22 @@
+<ion-content padding>
+
+<ion-slides pager>  
+  <ion-slide>
+    <ion-toolbar>
+    </ion-toolbar>
+    <img src="assets/img/user.jpg">
+    <h2>Escribe tu clave</h2>
+    <ion-list>
+      <ion-item>
+        <ion-label>Clave</ion-label>
+        <ion-input type="text" [(ngModel)]="clave" (keyup.enter) = "continuar()"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button (click) = "continuar()" [disabled]="clave.length < 3">Login</button>
+  </ion-slide>
+  <ion-slide>
+    
+  </ion-slide>
+</ion-slides>
+
+</ion-content>
