@@ -1,6 +1,6 @@
 <ion-content padding>
 
-<ion-slides pager>  
+<ion-slides pager #slide1>  
   <ion-slide>
     <ion-toolbar>
     </ion-toolbar>
@@ -15,7 +15,12 @@
     <button ion-button (click) = "continuar()" [disabled]="clave.length < 3">Login</button>
   </ion-slide>
   <ion-slide>
-    
+    <ion-toolbar>
+    </ion-toolbar>
+    <img src="assets/img/check.jpg">
+    <button ion-button large outline icon-right color="primary" (click) = "acceder()">Acceder 
+      <ion-icon name="arrow-forward"></ion-icon>
+    </button>
   </ion-slide>
 </ion-slides>
 
