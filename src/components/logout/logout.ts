@@ -22,6 +22,7 @@ export class LogoutComponent {
   salir() {
     console.log("entro en salir");
     this.userService.clave=null;
+    this.userService.eliminarClave();
     this.locService.stopLocation();
     this.navCtrl.setRoot("LoginPage");
   }

@@ -59,7 +59,14 @@ export class UsuarioProvider {
     });
 
     return promise;
+  }
 
+  eliminarClave() {
+    let promise = new Promise((resolve, reject) => {
+      this.storage.set("clave", null).then(() => {
+        resolve();
+      });
+    });
   }
 
 }
