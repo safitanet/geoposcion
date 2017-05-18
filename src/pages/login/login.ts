@@ -1,6 +1,7 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides, ToastController, LoadingController } from 'ionic-angular';
 import { UsuarioProvider } from "../../providers/usuario/usuario";
+import { HomePage } from "../home/home";
 
 
 /**
@@ -56,7 +57,7 @@ export class LoginPage implements AfterViewInit {
   }
 
   acceder() {
-
+    this.navCtrl.setRoot(HomePage);
   }
 
   ngAfterViewInit() {
